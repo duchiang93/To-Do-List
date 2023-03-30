@@ -90,9 +90,8 @@ add.addEventListener("click", (e) => {
   form.children[0].value = ""; //clear the text input
   section.appendChild(todo);
 
-  (form.children[1].value = ""), //clear the month input
-    (form.children[2].value = ""); //clear the date input
-  section.appendChild(time);
+  form.children[1].value = "";
+  form.children[2].value = "";
 });
 
 loadData();
